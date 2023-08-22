@@ -20,8 +20,4 @@ public class Request {
     @Column(name = "request_status", nullable = false, length = 50)
     private String requestStatusId;
 
-    @OneToMany
-    @JoinColumn(name="request_id")
-    private List<RequestActivity> members = new ArrayList<>();
-
 }
