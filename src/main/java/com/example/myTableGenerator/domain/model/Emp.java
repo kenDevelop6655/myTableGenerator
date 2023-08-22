@@ -23,4 +23,7 @@ public class Emp {
 
     @Column(name = "role_id", nullable = false)
     private Integer roleId;
+
+    @Column(name = "group_id", nullable = false)
+    private Integer groupId;
 }

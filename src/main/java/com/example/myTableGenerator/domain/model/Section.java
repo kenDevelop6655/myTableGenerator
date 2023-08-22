@@ -3,13 +3,21 @@ package com.example.myTableGenerator.domain.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="SectionUser")
-public class Section extends Emp{
+@Table(name="Section")
+public class Section {
 
-
-    @Column(name = "section_id", nullable = false, length = 50)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "section_id")
     private Integer sectionId;
 
+    @Column(name = "section_name", nullable = false, length = 50)
+    private Integer sectionName;
+
     @Column(name = "manager", nullable = false, length = 50)
-    private Integer manager;
+    private String manager;
+
+    @Column(name = "group_id", nullable = false)
+    private Integer groupId;
+
 }
