@@ -7,11 +7,8 @@ import jakarta.persistence.*;
 public class Section extends Emp{
 
 
-    @Column(name = "group_id", nullable = false)
-    private Integer groupId;
-
-    @Column(name = "section_name", nullable = false, length = 50)
-    private Integer sectionName;
+    @Column(name = "section_id", nullable = false, length = 50)
+    private Integer sectionId;
 
     @Column(name = "manager", nullable = false, length = 50)
     private Integer manager;
