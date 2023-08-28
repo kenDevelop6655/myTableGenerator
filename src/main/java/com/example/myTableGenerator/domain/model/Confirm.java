@@ -14,16 +14,16 @@ public class Confirm {
     @Column(name = "confirm_id")
     private Integer confirmId;
 
-    @Column(name = "execute_date", nullable = false)
+    @Column(name = "execute_date")
     private Date executeDate;
 
-    @Column(name = "executer_id", nullable = false)
+    @Column(name = "executer_id")
     private Integer executerId;
 
-    @Column(name = "confirm_status_id", nullable = false)
+    @Column(name = "confirm_status_id")
     private Integer confirmStatusId;
 
-    @Column(name = "note", nullable = false, length = 200)
+    @Column(name = "note", length = 200)
     private String note;
 
     @ManyToOne

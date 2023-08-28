@@ -10,6 +10,6 @@ public class Test {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "user_name", nullable = false, length = 50)
+    @Column(name = "user_name",length = 50)
     private String userName;
 }

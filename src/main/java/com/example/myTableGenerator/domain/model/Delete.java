@@ -14,16 +14,13 @@ public class Delete {
     @Column(name = "delete_id")
     private Integer deleteId;
 
-//    @Column(name = "equip_id", nullable = false)
-//    private Integer equipId;
-
-    @Column(name = "delete_date", nullable = false)
+    @Column(name = "delete_date")
     private Date deleteDate;
 
-    @Column(name = "delete_emp_id", nullable = false)
+    @Column(name = "delete_emp_id")
     private Integer deleteEmpId;
 
-    @Column(name = "note", nullable = false, length = 200)
+    @Column(name = "note",length = 200)
     private String note;
 
     @ManyToOne

@@ -12,18 +12,18 @@ public class Emp {
     @Column(name = "emp_id")
     private Integer empId;
 
-    @Column(name = "user_name", nullable = false, length = 50)
+    @Column(name = "user_name", length = 50)
     private String empName;
 
-    @Column(name = "password", nullable = false, length = 50)
+    @Column(name = "password",  length = 50)
     private String password;
 
-    @Column(name = "email", nullable = false, length = 50)
+    @Column(name = "email",  length = 50)
     private String email;
 
-    @Column(name = "role_id", nullable = false)
+    @Column(name = "role_id")
     private Integer roleId;
 
-    @Column(name = "group_id", nullable = false)
+    @Column(name = "group_id")
     private Integer groupId;
 }

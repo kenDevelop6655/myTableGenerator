@@ -8,6 +8,6 @@ import jakarta.persistence.Table;
 @Table(name="FirstApprove")
 public class FirstApprove extends RequestActivity{
 
-    @Column(name = "first_approver_id", nullable = false)
+    @Column(name = "first_approver_id")
     private Integer firstApproverId;
 }

@@ -11,12 +11,12 @@ public class Division {
     @Column(name = "division_id")
     private Integer sectionId;
 
-    @Column(name = "division_name", nullable = false, length = 50)
+    @Column(name = "division_name", length = 50)
     private String divisionName;
 
-    @Column(name = "manager", nullable = false, length = 50)
+    @Column(name = "manager",  length = 50)
     private String manager;
 
-    @Column(name = "group_id", nullable = false)
+    @Column(name = "group_id")
     private Integer groupId;
 }

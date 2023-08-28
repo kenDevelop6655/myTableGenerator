@@ -5,9 +5,9 @@ import jakarta.persistence.*;
 @Entity
 @Table(name="Cancel")
 public class Cancel extends RequestActivity{
-    @Column(name = "cancel_emp_id", nullable = false)
+    @Column(name = "cancel_emp_id")
     private Integer cancelEmpId;
 
-    @Column(name = "note", nullable = false, length =200)
+    @Column(name = "note", length =200)
     private String note;
 }

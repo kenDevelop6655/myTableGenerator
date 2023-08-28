@@ -14,10 +14,10 @@ public class Request {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "request_id", nullable = false)
+    @Column(name = "request_id")
     private Integer requestId;
 
-    @Column(name = "request_status", nullable = false, length = 50)
+    @Column(name = "request_status",  length = 50)
     private String requestStatusId;
 
 }

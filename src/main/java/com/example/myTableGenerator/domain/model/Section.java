@@ -11,7 +11,7 @@ public class Section {
     @Column(name = "section_id")
     private Integer sectionId;
 
-    @Column(name = "section_name", nullable = false, length = 50)
+    @Column(name = "section_name", length = 50)
     private Integer sectionName;
 
     @Column(name = "manager", nullable = false, length = 50)
