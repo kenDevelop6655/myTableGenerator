@@ -3,7 +3,8 @@ package com.example.myTableGenerator.domain.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDate;
+
 
 @Entity
 @Data
@@ -15,7 +16,7 @@ public class Delete {
     private Integer deleteId;
 
     @Column(name = "delete_date")
-    private Date deleteDate;
+    private LocalDate deleteDate;
 
     @Column(name = "delete_emp_id")
     private Integer deleteEmpId;

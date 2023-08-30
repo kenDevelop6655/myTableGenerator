@@ -3,7 +3,8 @@ package com.example.myTableGenerator.domain.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDate;
+
 
 @Entity
 @Data
@@ -27,7 +28,7 @@ public class Equip {
     private Integer ownerId;
 
     @Column(name = "purchase_date")
-    private Date purchaseDate;
+    private LocalDate purchaseDate;
 
     @Column(name = "location", length = 50)
     private String location;

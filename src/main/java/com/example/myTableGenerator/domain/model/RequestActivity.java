@@ -3,9 +3,8 @@ package com.example.myTableGenerator.domain.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.time.LocalDate;
+
 
 @MappedSuperclass
 @Data
@@ -17,7 +16,7 @@ public class RequestActivity {
     private Integer requestActivityId;
 
     @Column(name = "request_activity_date")
-    private Date requestActivityDate;
+    private LocalDate requestActivityDate;
 
     @Column(name = "request_type_id")
     private Integer requestTypeId;
