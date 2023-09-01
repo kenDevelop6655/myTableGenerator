@@ -1,12 +1,24 @@
 package com.example.myTableGenerator.domain.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+
+import java.util.Date;
 
 @Entity
 @Table(name="Receive")
-public class Receive extends RequestActivity{
+public class Receive{
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "request_receive_id")
+    private Integer requestReceiveId;
+
+    @ManyToOne
+    @JoinColumn(name="request_id")
+    private Request request;
+
+    @Column(name = "request_receive_date")
+    private Date requestReceiveDate;
 
     @Column(name = "equip_name", length = 50)
     private String equipName;

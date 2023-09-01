@@ -1,13 +1,25 @@
 package com.example.myTableGenerator.domain.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+
+import java.util.Date;
 
 @Entity
 @Table(name="FirstApprove")
-public class FirstApprove extends RequestActivity{
+public class FirstApprove{
 
-    @Column(name = "first_approver_id")
-    private Integer firstApproverId;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "request_first_approve_id")
+    private Integer requestFirstApproveId;
+
+    @ManyToOne
+    @JoinColumn(name="request_id")
+    private Request request;
+
+    @Column(name = "request_first_approve_date")
+    private Date requestFirstApproveDate;
+
+    @Column(name = "first_approve_user_id")
+    private Integer firstApproveUserId;
 }

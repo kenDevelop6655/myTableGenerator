@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 
 @Entity
@@ -28,7 +29,7 @@ public class Equip {
     private Integer ownerId;
 
     @Column(name = "purchase_date")
-    private LocalDate purchaseDate;
+    private Date purchaseDate;
 
     @Column(name = "location", length = 50)
     private String location;

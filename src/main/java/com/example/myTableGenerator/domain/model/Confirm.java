@@ -2,8 +2,7 @@ package com.example.myTableGenerator.domain.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
-
-import java.time.LocalDate;
+import java.util.Date;
 
 @Entity
 @Data
@@ -15,7 +14,7 @@ public class Confirm {
     private Integer confirmId;
 
     @Column(name = "execute_date")
-    private LocalDate executeDate;
+    private Date executeDate;
 
     @Column(name = "executer_id")
     private Integer executerId;
