@@ -23,8 +23,7 @@ public class Delete {
     @Column(name = "note",length = 200)
     private String note;
 
-    @ManyToOne
-    @JoinColumn(name="equip_id")
-    private Equip equip;
+    @Column(name="equip_id")
+    private int equipId;
 
 }

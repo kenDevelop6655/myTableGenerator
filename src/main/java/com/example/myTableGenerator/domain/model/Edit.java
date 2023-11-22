@@ -43,8 +43,7 @@ public class Edit {
     @Column(name = "edit_emp_id")
     private Integer editEmpId;
 
-    @ManyToOne
-    @JoinColumn(name="equip_id")
-    private Equip equip;
+    @Column(name="equip_id")
+    private int equipId;
 }
 

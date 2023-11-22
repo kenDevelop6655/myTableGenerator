@@ -13,24 +13,29 @@ public class Add {
     @Column(name = "add_id")
     private Integer addId;
 
-    @ManyToOne
-    @JoinColumn(name="equip_id")
-    private Equip equip;
+    @Column(name="equip_id")
+    private int equipId;
 
-    @Column(name = "user_name", length = 50)
-    private String empName;
+    @Column(name = "equip_manage_code",length=50)
+    private String equipManageCode;
 
-    @Column(name = "password",  length = 50)
-    private String password;
+    @Column(name = "equip_name",  length = 50)
+    private String equipName;
 
-    @Column(name = "email",  length = 50)
-    private String email;
+    @Column(name = "equip_type_id")
+    private Integer equipTypeId;
 
-    @Column(name = "role_id")
-    private Integer roleId;
+    @Column(name = "owner_id")
+    private Integer ownerId;
 
-    @Column(name = "group_id")
-    private Integer groupId;
+    @Column(name = "purchase_date")
+    private Date purchaseDate;
+
+    @Column(name = "location", length = 50)
+    private String location;
+
+    @Column(name = "note", length = 200)
+    private String note;
 
     @Column(name = "add_date")
     private Date add_date;
